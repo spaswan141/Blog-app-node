@@ -19,7 +19,7 @@ UserSchema.methods.generateAuthToken = function (req, res) {
       gender:this.gender
     },
     process.env.PrivateKey,
-    { expiresIn: "2d" }
+    { expiresIn: "7d" }
   );
   return token
 };
