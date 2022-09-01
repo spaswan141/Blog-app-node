@@ -25,7 +25,8 @@ module.exports.newBlog=function (req, res){
         _id:uuidv4(),
         Body:req.body.Body,
         Title:req.body.Title,
-        cDate:formatDate(new Date())
+        cDate:formatDate(new Date()),
+        uDate:formatDate(new Date())
     })
     createBlog.save((err, blog)=>{
         res.status(201).send(blog["_doc"]);
@@ -44,7 +45,9 @@ module.exports.updateBlog= async function (req, res){
         Title:req.body.Title,
         uDate:formatDate(new Date())
     }).then(()=>{
-     res.status(200).send("Updated Succcesfully")
+     res.status(200).send({message:"SuccessFully Updated",blog})
+    }).catch((err)=>{
+        res.status(500).send({message:err})
     })
 }
 

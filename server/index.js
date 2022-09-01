@@ -4,7 +4,7 @@ const cors=require('cors')
 const connection = require("./db");
 const blogRouter=require('./routers/blog.router')
 const reviewRouter=require('./routers/review.router')
-const authRouter=require('./routers/auth.router')
+const authRouter=require('./routers/user.router')
 const app = express()
 connection();
 app.use(express.urlencoded({ extended: true }))
