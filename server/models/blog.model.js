@@ -9,7 +9,7 @@ const blogSchema = new Schema({
    
 })
 
-const Blog= model("blog",blogSchema)
+const Blog= model("Blogss",blogSchema)
 module.exports =Blog
 
 

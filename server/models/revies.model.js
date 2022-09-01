@@ -5,7 +5,7 @@ const reviewSchema = new Schema({
   _id:{ type:String},
   userId: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "user",
+    ref: "UsersInfo",
     required: true,
   },
   description: { type:String ,required: true },
@@ -13,7 +13,7 @@ const reviewSchema = new Schema({
   uDate: { type: String },
 });
 
-const Review = model("review", reviewSchema);
+const Review = model("UserReviews", reviewSchema);
 module.exports = Review;
 
 

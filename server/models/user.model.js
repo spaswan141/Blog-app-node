@@ -34,6 +34,6 @@ const validate = function (user) {
   });
   return schema.validate(user)
 };
-const User = model("user", UserSchema);
+const User = model("UsersInfo", UserSchema);
 
 module.exports = { User,validate};
