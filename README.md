@@ -1,5 +1,7 @@
 <h1>This is Blog api</h1>
-<h4>By This Api user can do all the crud operations </h4>
+<h4>By This Api user can create the blog ,delete update ,get all the blogs and also by id </h4>
+<h4>By This Api user can create the review ,delete the review </h4>
+<h4>By This Api user also can dp authentication like do login or signup</h4>
 
  <h1>https://newblogapis.herokuapp.com/</h1>
     <h1>Blog Section</h1>
