@@ -44,11 +44,10 @@ module.exports.updateBlog= async function (req, res){
         Body:req.body.Body,
         Title:req.body.Title,
         uDate:formatDate(new Date())
-    }).then(()=>{
-     res.status(200).send({message:"SuccessFully Updated",blog})
-    }).catch((err)=>{
-        res.status(500).send({message:err})
     })
+    res.status(200).send({message:"SuccessFully Updated",blog})
+     
+
 }
 
 function padTo2Digits(num) {
