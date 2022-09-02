@@ -9,7 +9,7 @@
     <h4>update blog : /update/:id </h4>
     <h4>delete blog : /delete/:id </h1>
   
-    <h1>Authentication</h1>
+    <h1>Signup/login</h1>
    <h1><u>Note:</u> If User want to review any blog then he need to signup</h1>
    <h4>for signup:/signup</h4>
    <h4>for login : /login</h4>
